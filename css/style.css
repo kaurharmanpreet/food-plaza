@@ -1,0 +1,642 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+	box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul{
+	margin:0;
+}
+
+a{
+	text-decoration: none;
+}
+
+li{
+	list-style: none;
+}
+
+p{
+	font-size: 1.2rem;
+}
+
+html{
+	font-size: 15px;
+	scroll-behavior: smooth;
+}
+
+:root{
+	--secondary-font:'Herr Von Muellerhoff', cursive;
+	--main-font-color:#252525;
+	--secondary-font-color:#c59d5f;
+    --body-font-color:#515151;
+}
+
+.container{
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 5% 2%;
+}
+
+.flex{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+/*header css starts here*/
+
+.full-width{
+	width:100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("../images/banner.jpg");
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-position: center;
+}
+.navigation{
+	width:100%;
+	padding: 0 5%;
+	position: relative;
+}
+.logo{
+	font-size: 2rem;
+	color: #fff;
+	padding:1rem 0;
+	letter-spacing: 2px;
+}
+.logo .color{
+    color:var(--secondary-font-color);
+	font-size: 2.9rem;
+}
+.nav-list .nav-item{
+	font-size: 1.6rem;
+	padding: 2.4rem 0 1.3rem 2rem;
+}
+.nav-list .nav-item a{
+    color: #fff;
+}
+.nav-list .nav-item a:hover{
+	color:var(--secondary-font-color);
+}
+.menu-toggle{
+	display: none;
+	color: #fff;
+    font-size: 2.2rem;
+}
+
+/*header css ends here*/
+
+/*banner css starts*/
+
+.banner{
+	width:50%;
+	margin: 0 auto;
+	text-align: center;
+}
+.banner-content{
+	margin-top: 15rem;
+}
+.first-heading{
+	font-size: 6rem;
+	color: var(--secondary-font-color);
+	font-family: var(--secondary-font);
+	letter-spacing: 8px;
+	line-height: .6;
+	opacity: 0;
+	animation: fadeUp .5s forwards;
+	animation-delay: .5s;
+}
+.second-heading{
+	font-size: 2.4rem;
+	color: #fff;
+	letter-spacing: 4px;
+	animation: scale .5s forwards;
+}
+.separator{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.line{
+	width: 15%;
+	height: 1px;
+	background-color: #fff;
+	animation: grow 2s forwards;
+	animation-delay: .9s;
+	opacity: 0;
+}
+.asterisk{
+	color: var(--secondary-font-color);
+	font-size: 1.5rem;
+	opacity: 0;
+	animation: spin .5s forwards;
+	animation-delay: .7;
+}
+.single-animation{
+	opacity: 0;
+	animation: fadeDown .5s forwards;
+	animation-delay: 1.5s;
+}
+.single-animation h5{
+	font-size:1.4rem;
+	color:#fff;
+	font-weight: lighter;
+	letter-spacing: 2px;
+	margin-bottom: 1.6rem;
+}
+.my-btn{
+	font-size: 1.6rem;
+	background-color: #fff;
+	color: var(--body-font-color);
+	padding: 0.9rem 2rem;
+	transition: background-color .5s linear;
+}
+.my-btn:hover{
+	background-color: var(--secondary-font-color);
+	color: #fff; 
+	outline: none;
+}
+
+/*banner css ends*/
+
+/*our story css part starts here*/
+.left-part{
+	width:49%;
+	padding: 2rem 0;
+	text-align: center;
+}
+.right-part{
+	width:47%;
+}
+.left-part .first-heading{
+	font-size: 6.4rem;
+	color: var(--secondary-font-color);
+	font-family: var(--secondary-font);
+	letter-spacing: 5px;
+	line-height: .3;
+}
+.left-part .second-heading{
+	color: var(--main-font-color);
+	font-size: 2.5rem;
+	letter-spacing: 13px;
+}
+.left-part .separator{
+	color: var( --body-font-color);
+	margin: 0.8rem 0;
+	font-size: 1.4rem;
+}
+.left-part p{
+	line-height: 30px;
+}
+.left-part .about-us ,
+.left-part .full-menu,
+.left-part .reservation{
+	margin-top: 1rem;
+}
+.left-part .about-us a ,
+.left-part .full-menu a,
+.left-part .reservation a{
+    font-size: 1.8rem;
+    color: var(--secondary-font-color);
+    transition: color .5s;
+    position: relative;
+}
+.left-part .about-us a::after,
+.left-part .full-menu a::after,
+.left-part .reservation a::after
+{
+	content: "";
+	position: absolute;
+	top:108%;
+	left:0;
+	width:100%;
+	height: 4px;
+	background-color:  var(--secondary-font-color);
+}
+.left-part .about-us :hover,
+.left-part .full-menu :hover,
+.left-part .reservation :hover
+{
+	color: var(--main-font-color);
+}
+.our-storyimg{
+	width:100%;
+}
+/*our story css part ends here*/
+
+/*tasteful recipies css part starts*/
+
+.tasteful-recipies{
+	width:100%;
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("../images/tasteful.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center;
+}
+.my-container{
+	margin: 0 auto;
+	text-align: center;
+	padding: 10% 0;
+}
+.my-container .first-heading{
+	font-size: 5.9rem;
+	color: var(--secondary-font-color);
+	font-family: var(--secondary-font);
+	letter-spacing: 10px;
+}
+.my-container .second-heading{
+	font-size: 4rem;
+	color: #fff;
+	letter-spacing: 9px;
+	font-family: var(--secondary-font);
+}
+
+/*tasteful recipies css part ends*/
+
+/*discover menu starts*/
+
+.images-part{
+	width: 47%;
+}
+
+.images-part .menu-image{
+	width: 49%;
+	height: 160px;
+
+}
+.images-part .menu-img {
+	width: 100%;
+	height: 100%;
+}
+
+/*discover menu ends*/
+
+/*perfect blend part starts here*/
+
+.perfect-blend{
+	width:100%;
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../images/perfect-blend.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position:center;
+}
+
+/*perfect blend part ends here*/
+
+/*our speciality part starts here*/
+
+.speciality .left-part{
+	padding-top: 60px;
+}
+.two-images{
+	width:47%;
+}
+.two-images .one-image{
+	width:49%;
+	height: 440px;
+}
+.two-images .image{
+	width:100%;
+	height: 100%;
+}
+
+/*our speciality part endts here*/
+
+/*footer part starts here*/
+
+.footer{
+	width:100%;
+	background-color: #000;
+	overflow: hidden;
+}
+.footer-part{
+	width:60%;
+	margin: 0 auto;
+	text-align: center;
+	padding: 3% 2%;
+	color: #fff;
+}
+.footer-discription .sign{
+    font-size: 1.7rem;
+    color: #fff;
+	margin-bottom: 10px;
+}
+.footer-discription .about-plaza{
+	font-size: 2rem;
+	margin-bottom: 1rem;
+	letter-spacing: 5px;
+}
+.footer-discription p{
+	margin: 2rem 0 2.5rem 0;
+	justify-content: center;
+}
+.social-icons h2, 
+.news-letter h2{
+	font-size: 1.6rem;
+	margin-bottom: 1rem;
+	letter-spacing: 5px;
+}
+.social-icons a{
+	font-size: 1.5rem;
+	color: #fff;
+	padding:0 0.8rem;
+}
+.social-icons a:hover{
+	color: var(--secondary-font-color);
+}
+.news-letter form{
+	position: relative;
+}
+.news-letter form input{
+	width:100%;
+	height: 35px;
+	padding-left: 10px;
+}
+::placeholder{
+	padding-left: 10px;
+}
+.news-letter form .footer-button{
+	background: none;
+	border:none;
+	position: absolute;
+	top:5px;
+	right:5px;
+}
+form .footer-button .envp{
+	font-size: 1.5rem;
+}
+.copy-right{
+	width:60%;
+	margin: 0 auto;
+	text-align: center;
+	padding: 15px 0;
+}
+.copy-right p{
+	color: #fff;
+	letter-spacing: 3px;
+}
+.copy-right .name{
+	color: var(--secondary-font-color);
+}
+/*footer part ends here*/
+
+/*media query starts here*/
+
+@media only screen and (max-width: 991px){
+.logo{
+	padding: 0;
+}
+.menu-toggle{
+	display: block;
+}
+.open{
+	position: absolute;
+	top:20px;
+	right:30px;
+}
+.close{
+	position: absolute;
+	top:30px;
+	right:180px;
+	z-index: 1;
+	display: none;
+	font-size: 2.5rem;
+}
+.logo{
+	position: relative;
+}
+.nav-list {
+	position: absolute;
+	top:40px;
+	left:25px;
+	display: flex;
+	flex-direction: column;
+	margin-top: 1.5rem;
+	display: none;
+}
+.nav-list .nav-item{
+	padding-bottom: 3rem;
+	font-size: 2rem;
+}
+.side-bar {
+	background-color: #272634;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 100vh;
+	z-index: 1;
+	transition: all 0.5s;
+}
+.side-bar .nav-list a:hover{
+	color: rgba(225,225,225,0.7);
+}
+.our-story .left-part,
+.speciality .left-part{
+	width:98%;
+	margin: 50px auto 40px auto;
+}
+.our-story .right-part,
+.speciality .two-images{
+	width:70%;
+	margin: 0 auto;
+}
+.speciality .left-part{
+	padding-top: 30px;
+}
+.discover-menu .images-part{
+    width:70%;
+	margin: 50px auto 40px auto;
+}
+.discover-menu .left-part{
+	width:98%;
+	margin: 0 auto;
+}
+.tasteful-recipies{
+	margin-top: 18px;
+}
+.footer{
+	margin-top: 50px;
+}
+.footer-part{
+	padding: 5% 2%;
+}
+.footer-flex{
+	display: flex;
+	flex-direction: column;
+}
+.news-letter h2{
+	margin-top: 40px;
+}
+.news-letter form input{
+	height: 45px;
+}
+.news-letter form .footer-button{
+	top:10px;
+	right:15px;
+}
+}	
+
+@media only screen and (max-width: 700px){
+.second-heading{
+	font-size: 2.2rem;
+	letter-spacing: 2px;
+}	
+.my-container .first-heading{
+	font-size: 5rem;
+	letter-spacing: 0;
+}
+}
+@media only screen and (max-width: 600px){
+.close{
+	right:50px;
+}
+.second-heading{
+	font-size: 2rem;
+	letter-spacing: 0;
+}	
+.left-part .first-heading{
+	font-size: 6rem;
+}
+.left-part .second-heading{
+	font-size: 2.2rem;
+}
+.our-story .right-part,
+.speciality .two-images{
+	width:100%;
+}
+.discover-menu .images-part{
+    width:100%;
+}
+.footer-part{
+	width:100%;
+}
+.copy-right{
+	width:97%;
+}
+.copy-right p{
+	font-size: 1rem;
+}
+}
+@media only screen and (max-width: 500px){	
+.logo{
+	font-size: 1.7rem;
+	letter-spacing: 1px;
+}
+.logo .color{
+	font-size: 2.5rem;
+}
+.open{
+	font-size: 2rem;
+	top:16px;
+}
+.nav-list{
+	left: 0;
+}
+.nav-list .nav-item{
+	font-size: 1.8rem;
+}
+.first-heading{
+	font-size: 4.2rem;
+	letter-spacing: 5px;
+}
+.second-heading{
+	font-size: 1.5rem;
+}
+.single-animation h5{
+	font-size:1.1rem;
+	letter-spacing: 0;
+}	
+.left-part .first-heading{
+	font-size: 5.7rem;
+}
+.left-part .second-heading{
+	font-size: 2rem;
+}
+.my-container .first-heading{
+	font-size: 4.7rem;
+}
+.my-container .second-heading{
+	font-size: 3.5rem;
+}
+.my-btn{
+	font-size: 1.4rem;
+	padding: 0.7rem 1.7rem;
+}
+.footer-part{
+	padding: 8% 2%;
+}
+}
+@media only screen and (max-width: 400px){		
+.second-heading{
+	font-size: 1.2rem;
+}
+.single-animation h5{
+	font-size:1rem;
+}	
+.my-container .first-heading{
+	font-size: 4.2rem;
+}
+.my-container .second-heading{
+	font-size: 3rem;
+}
+}
+/*media query ends here*/
+
+/*animation starts here*/
+
+@keyframes fadeUp{
+	0%{
+		transform: translateY(30px);
+	}
+	100%{
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+@keyframes scale{
+	0%{
+		transform: scale(2);
+	}
+	100%{
+		transform: scale(1);
+	}
+}
+@keyframes grow{
+	0%{
+		width:0;
+	}
+	100%{
+		width: 20%;
+		opacity: 1;
+	}
+}
+@keyframes spin{
+	0%{
+		transform: rotate(0);
+	}
+	100%{
+		opacity: 1;
+		transform: rotate(-360deg);
+	}
+}
+@keyframes fadeDown{
+	0%{
+		transform: translateY(-20px);
+	}
+	100%{
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+/*animation ends here*/
